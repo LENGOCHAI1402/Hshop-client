@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new car</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="../images/icons8-car-32.png">
+    <link rel="stylesheet" href="../css/add-new-car.css">
+</head>
+<body>
+    <header>
+        <h1>AUTOMOTIVE REPAIR</h1>
+    </header>
+    <div class="container">
+        <aside>
+            <div class="menu">
+                <p><a href="./index.html"><b>MENU</b></a></p>
+                <p><a href="./add-new-car.html">Add a new car</a></p>
+                <p><a href="./cars-management.html">Car management</a></p>
+                <p><a href="./accessory-details.html">Accessory Details</a></p>
+            </div>
+        </aside>
+        <div class="vr"></div>
+        <main>
+            <form id="car-create-form">
+                <p><b>CAR DETAILS</b></p>
+
+                <div class="form-control">
+                    <label for="license-plate">License plate</label>
+                    <input 
+                    type="text" 
+                    name="license-plate" 
+                    id="license-plate" 
+                    placeholder="30H-6666" 
+                    required>
+                </div>
+
+                <div class="form-control">
+                    <label for="repair-date">Repair date</label>
+                    <input 
+                    type="date" 
+                    name="repair-date" 
+                    id="repair-date">
+                </div>
+
+                <div class="form-control">
+                    <label for="customer-name">Customer name</label>
+                    <input type="text" name="customer-name" id="customer-name" placeholder="Lê Ngọc Hải" required>
+                </div>
+
+                <div class="form-control">
+                    <label for="catalog">Catalog</label>
+                    <input type="text" name="catalog" id="catalog" placeholder="Bảo dưỡng định kỳ lần 1" required>
+                </div>
+
+                <div class="form-control">
+                    <label for="car-maker">Car maker</label>
+                    <input type="text" name="car-maker" id="car-maker" placeholder="honda" required>
+                </div>
+
+                <div class="form-submit">
+                    <div>
+                        <input type="submit" value="Save car">
+                        <input type="reset" value="Reset">
+                    </div>
+                    <a href="./accessory-details.html">Accessory details</a>
+                </div>
+            </form>
+        </main>
+    </div>
+    <footer><i>BASED ON SPRING FRAMEWORK</i></footer>
+    <script src="../Js/add-new-car.js"></script>
+</body>
+</html>
