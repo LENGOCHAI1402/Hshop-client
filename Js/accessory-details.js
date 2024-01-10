@@ -68,7 +68,7 @@ async function showAllAccessories(accessories) {
             formName.value = accessory.name;
             formPrice.value = accessory.price;
             formStatusDamaged.value = accessory.statusDamaged;
-            formRepairStatus.value = accessory.repairDate;
+            formRepairStatus.value = accessory.repairStatus;
         });
 
         const btnDelete = document.createElement("button");
